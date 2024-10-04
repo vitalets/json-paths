@@ -9,7 +9,7 @@ import { getAllPaths } from './getAllPaths';
 export type JsonPathsResult = Record<string, number | Record<string, number>>;
 export type JsonPathsRules = Record<
   string,
-  boolean | null | 'value' | ((origValue: unknown) => unknown)
+  boolean | null | 'value' | ((origValue: unknown, pathStr: string) => unknown)
 >;
 
 export type JsonPathsOptions = {
@@ -63,7 +63,7 @@ class JsonPaths {
     if (!ruleValue) return;
     if (ruleValue === 'value') ruleValue = (value) => value;
     if (typeof ruleValue === 'function') {
-      const transformedValue = ruleValue(value);
+      const transformedValue = ruleValue(value, pathStr);
       if (transformedValue === undefined) return;
       this.result[pathStr] = this.result[pathStr] || {};
       incrementByKey(
