@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/json-paths)](https://www.npmjs.com/package/json-paths)
 [![license](https://img.shields.io/npm/l/json-paths)](https://github.com/vitalets/json-paths/blob/main/LICENSE)
 
-Collects different paths of a JSON data. The main use-case - comparing two complex JSON structures. Instead of comparing objects itself, you can compare it's json paths.
+Collect different paths of JSON data. Allows to compare complex JSON structures by it's shape.
 
 ## Installation
 Install from npm:
