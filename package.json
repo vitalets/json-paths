@@ -1,0 +1,51 @@
+{
+  "name": "json-paths",
+  "description": "Collect different paths of a JSON data",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "prepare": "git config core.hooksPath .hooks",
+    "lint": "eslint .",
+    "tsc": "tsc",
+    "knip": "knip -c knip.config.ts",
+    "prettier": "prettier --check --ignore-unknown .",
+    "prettier:w": "prettier --write --ignore-unknown .",
+    "test": "vitest run ./test",
+    "build": "bash scripts/build.sh",
+    "release": "bash scripts/release.sh"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.11.1",
+    "@types/node": "^18.15.0",
+    "eslint": "9.11.1",
+    "eslint-plugin-visual-complexity": "0.1.4",
+    "globals": "15.9.0",
+    "knip": "5.30.6",
+    "lint-staged": "15.2.10",
+    "np": "10.0.7",
+    "prettier": "3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "5.5.4",
+    "typescript-eslint": "8.7.0",
+    "vitest": "2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vitalets/json-paths.git"
+  },
+  "keywords": [
+    "json",
+    "paths"
+  ],
+  "funding": "https://github.com/sponsors/vitalets",
+  "license": "MIT"
+}
