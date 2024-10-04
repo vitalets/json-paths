@@ -20,7 +20,7 @@
     "prettier": "prettier --check --ignore-unknown .",
     "prettier:w": "prettier --write --ignore-unknown .",
     "test": "vitest run ./test",
-    "build": "bash scripts/build.sh",
+    "build": "rm -rf ./dist && tsc -p tsconfig.build.json",
     "release": "bash scripts/release.sh"
   },
   "devDependencies": {
