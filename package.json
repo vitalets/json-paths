@@ -1,7 +1,7 @@
 {
   "name": "json-paths",
   "description": "Collect different paths of JSON data",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "commonjs",
   "main": "./dist/index.js",
   "engines": {
