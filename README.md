@@ -37,7 +37,7 @@ const shape = jsonPaths(data);
 */
 ```
 
-For arrays all elements are counted as the same path with `#` as index:
+For arrays, all elements are counted with the same path and `#` as an index:
 ```ts
 const data = {
   foo: {
