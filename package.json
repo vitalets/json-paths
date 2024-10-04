@@ -16,7 +16,7 @@
     "prepare": "git config core.hooksPath .hooks",
     "lint": "eslint .",
     "tsc": "tsc",
-    "knip": "knip -c knip.config.ts",
+    "knip": "knip -c knip.config.mts",
     "prettier": "prettier --check --ignore-unknown .",
     "prettier:w": "prettier --write --ignore-unknown .",
     "test": "vitest run ./test",
@@ -33,7 +33,7 @@
     "lint-staged": "15.2.10",
     "np": "10.0.7",
     "prettier": "3.3.3",
-    "ts-node": "^10.9.2",
+    "publint": "0.2.11",
     "typescript": "5.5.4",
     "typescript-eslint": "8.7.0",
     "vitest": "2.1.1"
